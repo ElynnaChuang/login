@@ -8,7 +8,6 @@ const port = 3000
 app.engine('hbs', exhbs({ extname: '.hbs', defaultLayout: 'main' }))
 app.set('view engine', 'hbs')
 
-app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(routes)
 

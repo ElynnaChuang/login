@@ -1,5 +1,4 @@
-{
-  "users": [
+[
   {
     "firstName": "Tony",
     "email": "tony@stark.com",
@@ -25,4 +24,4 @@
     "email": "nick@shield.com",
     "password": "password"
   }
-]}
+]

@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <div class="row mb-5">
+    <h1 class="text-center text-primary">
+      <a href="/" style="text-decoration: none;">Login</a>
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <form action="/" method="POST">
+        <div class="mb-4">
+          <label for="email" class="form-label text-secondary">Email address</label>
+          <input type="email" value="{{email}}" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="輸入電子郵件地址">
+          <div id="passwordHelp" class="form-text text-danger">{{#if registerInfo}}輸入的電子郵件尚未註冊{{/if}}</div>
+        </div>
+        <div class="mb-4">
+          <label for="password" class="form-label text-secondary">Password</label>
+          <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordHelp" placeholder="輸入數字+英文字母大小寫5位或以上">
+          <div id="passwordHelp" class="form-text text-danger">{{#if emailChecked}}輸入的密碼錯誤{{/if}}</div>
+        </div>
+        <div class="text-end">
+          <button type="submit" class="btn btn-primary mt-4  text-center">登入</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
